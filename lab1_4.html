@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="author" content="Фільшин Едуард">
+  <meta name="description" content="Лабораторна робота №11 з веб-розробки. Виконана Фільшиним Едуардом.">
+  <meta name="keywords" content="веб-розробка, bootstrap, лабораторна робота, адаптивний дизайн, JavaScript">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Фільшин Едуард</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <script>
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) {
+        "use strict";
+        document.write("Вітаємо на моїй динамічній сторінці!");
+        document.write("<h1 style='color:blue;text-align:center;'>Головний заголовок</h1>");
+        document.write('<p style="text-align:left;font-size:20px;color:green;">Текст з розміром та кольором.</p>');
+        document.write("<p style='font-style:italic;'>Кінець формування сторінки сценарієм JavaScript.</p>");
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="author" content="Фільшин Едуард">
+  <meta name="description" content="Лабораторна робота №11 з веб-розробки. Виконана Фільшиним Едуардом.">
+  <meta name="keywords" content="веб-розробка, bootstrap, лабораторна робота, адаптивний дизайн, JavaScript">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Фільшин Едуард</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <script>
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) {
+        "use strict";
+        let a = parseFloat(prompt("Введіть довжину першого катета a", ""));
+        let b = parseFloat(prompt("Введіть довжину другого катета b", ""));
+        let c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)); // гіпотенуза
+        let angle = Math.asin(a / c) * 180 / Math.PI; // кут у градусах
+        // Периметр
+        let p = a + b + c;
+        // Площа
+        let s = (a * b) / 2;
+        alert("Гіпотенуза = " + c.toFixed(2));
+        alert("Площа трикутника = " + s.toFixed(2));
+        alert("Периметр = " + p.toFixed(2));
+        alert("Кут напроти катета a = " + angle.toFixed(2) + "°");
+      }
+    });
+  </script>
+</body>
+
+</html>
