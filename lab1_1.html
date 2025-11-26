@@ -19,20 +19,16 @@
 
 <body>
   <script>
-    document.addEventListener("visibilitychange", () => {
-        if (!document.hidden) {
-          "use strict";
-          alert("Ласкаво просимо до міні-тесту!");
-          const proceed = confirm("Бажаєте пройти коротке опитування?");
-          if (proceed) {
-            const age = prompt("Скільки вам років?", "");
-            alert("Чудово! Вам " + age + " років — дякую за відповідь.");
-          }
-          else {
-            alert("Добре, можливо наступного разу!");
-          }
-        }
-      });
+    "use strict";
+    alert("Ласкаво просимо до міні-тесту!");
+    const proceed = confirm("Бажаєте пройти коротке опитування?");
+    if (proceed) {
+      const age = prompt("Скільки вам років?", "");
+      alert("Чудово! Вам " + age + " років — дякую за відповідь.");
+    }
+    else {
+      alert("Добре, можливо наступного разу!");
+    }
   </script>
 </body>
 

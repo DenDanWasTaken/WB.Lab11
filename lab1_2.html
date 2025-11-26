@@ -19,16 +19,12 @@
 
 <body>
   <script>
-    document.addEventListener("visibilitychange", () => {
-      if (!document.hidden) {
         "use strict";
         const y = parseInt(prompt("Введіть значення y", ""));
         let d = y * y + 4 * y - 6;
         let e = y - 3;
         let f = d * e;
         alert("Результат обчислення f = " + f);
-      }
-    });
   </script>
 </body>
 
